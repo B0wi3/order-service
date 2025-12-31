@@ -1,15 +1,18 @@
 spring:
   application:
     name: order-service
+
   datasource:
     url: jdbc:mysql://localhost:3306/ticketing
     username: root
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: none
+
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
